@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECOMMERCE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">    
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2018/08/25/01/15/scam-3629263_960_720.png">
+   <link rel="stylesheet" href="style.css">
+   <style>
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+   }
+   .card{
+    height: auto;
+    margin: 2px;
+    
+   }
+   @media only screen and (max-width:1200px){
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto auto ;
+   }
+   }
+   @media only screen and (max-width:600px){
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto ;
+   }
+   }
+   </style>
+</head>
+<body>
+   <header>
+      <nav>
+        <input type="checkbox" id="click">
+        <label for="click"class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <span class="logo"> <img class="logo-img"src="logo.jpg" >
+         </span>
+         <span class="search">
+            <input type="text" placeholder="product name, category name, etc">
+            <button type="button" class="btn btn-success"><i class="fa-solid fa-magnifying-glass"></i></button>
+         </span>
+         <a href="login.html"><button type="button" class="log btn-primary" href="login.html">login</button></a>
+         <a href="cartpage.html"><span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></a> 
+        <div class="nav-container">
+         <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="allproducts.html" class="nav-link">All products</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Women<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="womensall.html">All products</a></li>
+                <li><a class="dropdown-item" href="womensdress.html">Dresses</a></li>
+                <li><a class="dropdown-item" href="womenpants.html">Pants</a></li>
+                <li><a class="dropdown-item" href="womensskirts.html">skirts</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Men<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="mensallproducts.html">All products</a></li>
+                    <li><a class="dropdown-item " href="menshirts.html">shirts</a></li>
+                    <li><a class="dropdown-item " href="menpants.html">Pants</a></li>
+                    <li><a class="dropdown-item active" href="menshoodies.html">hoodies</a></li>
+                </ul>
+            </li>
+                <li class="nav-item"><a href="kidscloths.html" class="nav-link">Kids</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact</a></li>
+         </ul>
+         </div>
+         </nav>
+        </nav>
+      </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="content">
+            <h2>E-commerce online shopping<br>
+            <span class="logo-body"> <img class="logo-img-body"src="logo.jpg" >
+            </span></h2>
+            <div class="card-container">
+             <!--men hoodie-->
+             <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/71FD2l9DpEL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text"> Men's Fleece Hooded Hoodie<br>₹6499</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/81LpjmHkTAL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Jockey</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text"> Mens Hooded Slub Sweatshirt<br>₹1,669</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/51leD9rh8dL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Men's Cotton Hooded Neck Hoodies<br>₹679</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/811c067lJWL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">  Men's Cotton Hooded Neck Sweatshirt<br>₹599</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/71FD2l9DpEL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text"> Men's Fleece Hooded Hoodie<br>₹519</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/812fMBsQP7L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3> Amazon Brand - Symbol</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Men's Cotton Blend Hooded Sweatshirt (AW18MNSSW04_Ecru<br>₹779</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61bpdFL9G6L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>BLIVE</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text"> Men's Full Sleeve Hooded T-Shirt | Printed Hoodie T-Shirt<br>₹699</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/510SGdMK0BL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>More & More</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">  Unisex-Adult Cotton Hooded Neck Don’t Quit Printed Hoodie<br>₹786</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/51Hz7KZL2TL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Trillion</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Men's Printed Hooded Sweatshirt<br>₹619</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/81kSdS3nITL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Amazon Brand - Symbol</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Men Hooded Sweatshirt<br>₹609</div>
+                   <button type="button" class="cartbtn btn-primary" href="login.html"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/81pbCd9XNKS._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Diverse</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">  Men's Cotton Blend Hooded Full Sleeve Sweatshirt<br>₹719</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61ZNc27pJ6L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>TOPLOT</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text"> Men's Hoodie||Hoodie for Men||Men's Sweatshirt||Plain Hoodie||Men's<br>₹556</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/71Xf63YBhcL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Campus Sutra</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text"> Men’s Sweatshirt with Hoodie Regular Fit for Casual Wear | Full Sleeve <br>₹719</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61NRThJtaZL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Red Tape</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text"> Men Hoodie Sweatshirt<br>₹856</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61EYIj+k+HL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>LEWEL</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">  Men's Hooded Buttoned Down Checked T-Shirt (Olive Green)<br>₹479</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61+8bVgNxjL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>ADRO</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text"> Men's Solid Cotton Zipper Hoodies<br>₹716</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/51yrBJHE+WL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Moyzikh</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">  Men's Printed Cotton Hoodies<br>₹499</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61JWiBBo9cL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Veirdo</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">  Fleece Material Regular Fit Full Sleeves Hooded Neck Navy & Maroon<br>₹506</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/613yTmjH69L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Campus Sutra</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text"> Men’s Cotton Hoodie Relaxed Fit for Casual Wear | Full Sleeve | Latest<br>₹619</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/71BirWti0xL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Amazing Product</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text"> Amazon Brand - Inkast Denim Co. Men Sweatshirt<br>₹899</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+             </div>
+       </div>
+       </div>
+       <footer>
+         <div class="container">
+       <div class="item"><a href="womensall.html" class="item-link">Women</a><br> <a href="womensdress.html" class="item-link">Dresses</a><br><a href="womenpants.html"class="item-link">Pants</a><br><a href="womensskirts.html"class="item-link">skirts</a></div>
+       <div class="item"><a href="mensallproducts.html"class="item-link">Men</a><br><a href="menshirts.html"class="item-link">shirts</a><br><a href="menpants.html"class="item-link">Pants</a><br><a href="menshoodies.html"class="item-link">Hoodies</a></div>
+       <div class="item"><a href="kidscloths.html"class="item-link">Kids</a></div>
+       <div class="item"><a href="#"class="item-link">Links</a><br><a href="index.html"class="item-link">Home</a><br><a href="login.html"class="item-link">login</a><br><a href="contactus.html"class="item-link">Contact</a></div>
+       </div>
+       <hr>
+   <p><b>Copyright&copy; Reserved.</b></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECOMMERCE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">    
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2018/08/25/01/15/scam-3629263_960_720.png">
+   <link rel="stylesheet" href="style.css">
+   <style>
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+   }
+   .card{
+    height: auto;
+    margin: 2px;
+    
+   }
+   @media only screen and (max-width:1200px){
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto auto ;
+   }
+   }
+   @media only screen and (max-width:600px){
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto ;
+   }
+   }
+   </style>
+</head>
+<body>
+   <header>
+      <nav>
+        <input type="checkbox" id="click">
+        <label for="click"class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <span class="logo"> <img class="logo-img"src="logo.jpg" >
+         </span>
+         <span class="search">
+            <input type="text" placeholder="product name, category name, etc">
+            <button type="button" class="btn btn-success"><i class="fa-solid fa-magnifying-glass"></i></button>
+         </span>
+         <a href="login.html"><button type="button" class="log btn-primary" href="login.html">login</button></a>
+         <a href="cartpage.html"><span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></a> 
+        <div class="nav-container">
+         <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="allproducts.html" class="nav-link">All products</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Women<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="womensall.html">All products</a></li>
+                <li><a class="dropdown-item" href="womensdress.html">Dresses</a></li>
+                <li><a class="dropdown-item" href="womenpants.html">Pants</a></li>
+                <li><a class="dropdown-item active" href="womensskirts.html">skirts</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Men<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="mensallproducts.html">All products</a></li>
+                    <li><a class="dropdown-item " href="menshirts.html">shirts</a></li>
+                    <li><a class="dropdown-item " href="menpants.html">Pants</a></li>
+                    <li><a class="dropdown-item " href="menshoodies.html">hoodies</a></li>
+                </ul>
+            </li>
+                <li class="nav-item"><a href="kidscloths.html" class="nav-link">Kids</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact</a></li>
+         </ul>
+         </div>
+         </nav>
+        </nav>
+      </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="content">
+            <h2>E-commerce online shopping<br>
+            <span class="logo-body"> <img class="logo-img-body"src="logo.jpg" >
+            </span></h2>
+            <div class="card-container">
+             <!---women skirts-->
+             <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61Qv6q9GJoL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Stars and You</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Flared Skater Skirt for Girls<br>₹335</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61kifUtCsCL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>GENERIC</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Lovclick Fashion Women Stretch Waist Flared Mini Skater Short Skirt<br>₹399</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div> <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/51BQsCxKqQL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Splash</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Cotton Rich Regular Skirt Slip for Women (Pack of 3)<br>₹1,100</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61pqWkgTJhL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Generic</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Lovclick Fashion Women High Waist Versatile Straight Knee Length Pencil<br>₹399</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div> <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/91z4rs1aP7S._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>NUEVOSDAMAS</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Women Western Floral Printed Skirt | A- Line Pleated Skirt | Casual <br>₹499</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/71OHhet1o7L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>JANAK</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Faux Suede Mini Skirt 611<br>₹399</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div> <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/51jwhblfgOL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>FRAULEIN</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Girl's/Women's Classic Stretchy All Time Trendy Skater Knee Length<br>₹499</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61ZLuIHY7WL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>ZWERLON</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Midi-skirt<br>₹279</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div> <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61ry-ewvLyL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>OTABU</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Fealed skirt<br>₹299</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/91-zut6ZqWL._UY606_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Studio Shringaar</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Women's Knee Length Skirt<br>₹499</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div> <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61eHqwgzCfL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>ADDYVERO</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Women's Maxi Skirt<br>₹399</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/71qDGZti1tL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Polls apart</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Cotton Pencil Skirt (Pack of 1) (Black, Free Size)<br>₹599</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div> <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61DnuzCEHzL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Generic</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Women's Maxi Skirts With Inner Short (SKblack new_Blue_Free Size)<br>₹599</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61SXEy9M6gL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>POP-WINGS</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Women Geometric Print Pencil Skirt<br>₹299</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div> <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61+6jtDnnqL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Generic</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Printed Skirt All<br>₹299</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/71hVdbWkMZL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Aahwan</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Women's & Girls' Solid High Waist Flared Skater Short Mini Skirt<br>₹399</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div> <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/51cbEVfpIcL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Janak 'n' Masaaya</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Janak Women's Cotton Skirt Black<br>₹545</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/81OrAUmixCL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Studio Shringaar</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Women's Polyester Chanderi Silk Skirt Lehenga<br>₹949</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+            <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/81NOreF-63L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>EIRSON ENTERPRISES</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">EIRSON Cotton Women's Long Wrap Around Skirt Jaipuri Printed<br>₹549</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/61wb2Jx-p2L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                 <div class="card-title"><h3>Generic</h3></div><hr>
+                <div class="card-body">
+                   <div class="card-text">Corduroy Skirt<br>₹649</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+           </div>
+           </div>
+           <footer>
+            <div class="container">
+          <div class="item"><a href="womensall.html" class="item-link">Women</a><br> <a href="womensdress.html" class="item-link">Dresses</a><br><a href="womenpants.html"class="item-link">Pants</a><br><a href="womensskirts.html"class="item-link">skirts</a></div>
+          <div class="item"><a href="mensallproducts.html"class="item-link">Men</a><br><a href="menshirts.html"class="item-link">shirts</a><br><a href="menpants.html"class="item-link">Pants</a><br><a href="menshoodies.html"class="item-link">Hoodies</a></div>
+          <div class="item"><a href="kidscloths.html"class="item-link">Kids</a></div>
+          <div class="item"><a href="#"class="item-link">Links</a><br><a href="index.html"class="item-link">Home</a><br><a href="login.html"class="item-link">login</a><br><a href="contactus.html"class="item-link">Contact</a></div>
+          </div>
+          <hr>
+      <p><b>Copyright&copy; Reserved.</b></p>
+    </footer>         
+</body>
+</html>

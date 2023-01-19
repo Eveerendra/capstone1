@@ -1,0 +1,383 @@
+   .content{
+    width: 100%;
+    height:auto;
+    background-color:#7f7373;
+   }
+   .content h2{
+    text-align: center;
+    padding-top: 0%;
+  
+   }
+   
+   .card{
+    height: auto;
+    margin: 5px;
+    
+   }
+   .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left:  400px; 
+     margin-right: 400px;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+   }
+   .carousel-control-prev{
+    font-weight: 900;
+    text-align: center;
+    border-style: groove;
+    border-radius:10mm;
+    width:50px;
+    height: 50px;
+     left: 10%;
+     top: 25%;
+     background-color: rgb(83, 52, 52);
+     color: black;
+     
+   }
+   .carousel-control-next{
+    font-weight: 900;
+    text-align: center;
+    border-style: groove;
+    border-radius:10mm;
+    width:50px;
+    height: 50px;
+     right: 10%;
+     top: 25%;
+     background-color:rgb(83, 52, 52);
+     color: black;
+   }
+   .card{
+    background-color: aliceblue;
+    border: solid;
+    text-align: center;
+   }
+   .card-title,h3{
+    font-weight: 1000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+   }
+   .card-text{
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+   }
+   .card img{
+    
+   }
+   .card-body{
+    text-align: center;
+    font-size: 25px;
+   }
+   .cartbtn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    border: solid;
+   }
+  .item-link{
+    color:white;
+  }
+   *{
+      margin: 0;
+      padding: 0;
+   }
+   header,footer{
+      position::fixed;
+     width:100%;
+      color:white;
+   }
+   header{
+    background-color:#7f7373;
+      height:auto;
+   }
+   footer{
+    background-color:#7f7373;
+  height:auto;
+  bottom: 0;
+   }
+   .container{
+    text-align: center;
+   
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+   }
+   footer p{
+      color: rgb(49, 42, 46);
+      text-align: center;
+   }
+   .item-link{
+    text-align:
+   }
+   .nav-container{
+       text-align: center;
+       
+       background-color: #7f7373;
+       
+       background-color: white;
+       padding-left: 35%;
+       width: 100%;
+   }
+   
+   body{
+    background-color: #7f7373;
+   }
+   .nav-item:hover{
+    background-color: white;
+   }
+   .nav-item{
+      margin: 5px;
+      color: white;
+     border: solid;
+     border-color:black;
+     background-color:#7f7373;
+       text-align: center;
+   }
+   
+   .dropdown-item{
+    color: white;
+    background-color:#7f7373;
+    font-weight: 300;
+    font-style: initial;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1px;
+  }
+      nav{
+        background-color:#7f7373;
+       text-align: center;
+       margin-top: 5px;
+       padding-bottom: 10px;
+      }
+      .nav-link{
+        color: white;
+        
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+      }
+      .logo-img{
+        width: 100px;
+        height:70px;
+       }
+      .logo{
+       margin-bottom: ;
+       margin-top: 10px;
+       margin-left: 20px;
+       position: relative;
+      }
+      .logo-body{
+        justify-items: center;
+        position: relative;
+      }
+      .logo-img-body{
+        margin-left: px;
+        margin-right:px ;
+        width: 500px;
+        height:500px;
+      }
+      .search{
+       margin-left: 100px;
+       background-color: white;
+       padding-top: 10px; 
+       padding-bottom: 15px; 
+       padding-left: 10px;
+       padding-right: 10px;
+      text-align: end;
+      border: solid;
+      border-radius: 10mm;
+      }
+      .ul-container{
+      background-color: white;
+      margin-left: 400px;
+      margin-right: 400px;
+    }
+    .search-item{
+      border-style: inset;
+    }
+    .search-link{
+      color: black;
+      font-weight: 500;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      word-spacing: 2px;
+    }
+      .search input{ 
+          width: 400px;
+          border: none;
+          outline: none;
+      }
+      .search:hover{
+        border: solid;
+        border-color: black;
+        background-color:white;
+      }
+      .btn{
+       background-color: rgb(41, 53, 55);
+       border-radius: 5mm;
+      }
+     .cart{
+      font-size: 30px;
+      padding-left: 20px;
+     }
+      .log{ 
+      background-color: rgb(42, 81, 76);
+       font-family: Arial, Helvetica, sans-serif;
+       padding-left: 5px;
+       padding: right 5px;
+       margin-left: 100px;
+      }
+      .menu-btn{
+        color: black;
+        font-size: 25px;
+        cursor: pointer;
+        display: none;
+      }
+      #click{
+        display: none;
+      }
+      #mycarousel{
+        display: none;
+      }
+      #smcarousel{
+        display: none;
+      }
+     
+      @media only screen and (max-width:1200px){
+       
+        #smcarousel{
+          display: none;
+        }
+        #carouselExampleIndicators{
+          display: none;
+        }
+        #mycarousel{
+          display:block;
+        }
+        .md-container{
+         justify-content: center;
+          margin-left: 10px;
+          margin-right: 10px;
+          text-align: center;
+          display: grid;
+          grid-template-columns: auto auto ;
+         
+         }
+        .menu-btn{
+          text-align: left;
+           color: black;
+           font-size: 25px;
+           cursor: pointer;
+           display:inline-block;
+           color: aliceblue;
+           height: auto;
+         }
+         .nav-container{
+          display: grid;
+          grid-template-columns: auto;
+           text-align:justify  
+            border-color: black;
+           background-color: white;
+           position: absolute;
+           border: solid;
+           left: -100%;
+           height: auto;
+           
+       }
+       .nav-link{
+        color: rgb(43, 36, 36);
+        font-weight: 300;
+        font-style: initial;
+        letter-spacing: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid;
+      }
+       .nav-item{
+        display:inline-flex;
+        border: solid;
+        background-color:white;
+          text-align: center;
+          margin: 2px;
+      }
+      .dropdown-item{
+        color: black;
+        background-color:white;
+        font-weight: 300;
+        font-style: initial;
+        letter-spacing: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 2px;
+      }
+      
+      #click:checked ~.nav-container{
+        left:0%;
+      }
+      
+      .search{
+        margin-left: 0px;
+        background-color: white;
+        padding-top: 10px; 
+        padding-bottom: 10px; 
+        padding-left: 10px;
+        padding-right: 5px;
+       text-align: end;
+       border: solid;
+       border-radius: 10mm;
+       }
+       .search input{ 
+           width: 100px;
+           border: none;
+           outline: none;
+       }
+       .btn{
+        background-color: rgb(41, 53, 55);
+        border-radius: 5mm;
+       }
+      
+       .log{ 
+       font-weight:5000 ;
+        border-radius: 5mm;
+        margin-left: 10px;
+       }
+       .container{
+        text-align: center;
+        display: inline;
+       }
+      .item-link{
+        color:white;
+      }
+      .log{ 
+        height:auto;
+      }
+     }
+      @media only screen and (max-width:600px){
+        
+        #mycarousel{
+          display:none;
+        }
+        #smcarousel{
+          display: block;
+        }
+        .sm-container{
+          justify-content: center;
+          margin-left: 10px;
+          margin-right: 10px;
+          text-align: center;
+          display: grid;
+          grid-template-columns: auto;
+        }
+        .logo-img-body{
+          width:200px;
+          height: 200px;
+          margin-top: 10px;
+        }
+       
+        .content h2{
+          text-align: center;
+          padding-top: 0%;
+          margin-top: 80px;
+        
+         }
+      }

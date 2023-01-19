@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECOMMERCE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">    
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2018/08/25/01/15/scam-3629263_960_720.png">
+   <link rel="stylesheet" href="style.css">
+   <script>
+    function myFunction() {
+          // Declare variables
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById('searchbar');
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName('li');
+        
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+ 
+   </script>
+  <style>
+    .ul-container{
+      background-color: white;
+      margin-left: 400px;
+      margin-right: 400px;
+    }
+    .search-item{
+      border-style: inset;
+    }
+    .search-link{
+      color: black;
+      font-weight: 500;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      word-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+          <nav>
+            <input type="checkbox" id="click">
+            <label for="click"class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <span class="logo"> <img class="logo-img"src="logo.jpg" >
+             </span>
+             <span class="search">
+                <input type="text" id="searchbar" placeholder="product name, category name, etc" onkeyup="myFunction()">
+                <button type="button" class="btn btn-success"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  
+              </span>
+              <a href="login.html"><button type="button" class="log btn-primary" href="login.html">login</button></a>
+             <a href="cartpage.html"><span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></a>
+                
+            <div class="nav-container">
+             <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="allproducts.html" class="nav-link">All products</a></li>
+                <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Women<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="womensall.html">All products</a></li>
+                    <li><a class="dropdown-item" href="womensdress.html">Dresses</a></li>
+                    <li><a class="dropdown-item" href="womenpants.html">Pants</a></li>
+                    <li><a class="dropdown-item" href="womensskirts.html">skirts</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Men<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="mensallproducts.html">All products</a></li>
+                        <li><a class="dropdown-item" href="menshirts.html">shirts</a></li>
+                        <li><a class="dropdown-item" href="menpants.html">Pants</a></li>
+                        <li><a class="dropdown-item" href="menshoodies.html">hoodies</a></li>
+                    </ul>
+                </li>
+                    <li class="nav-item"><a href="kidscloths.html" class="nav-link">Kids</a></li>
+                    <li class="nav-item"><a href="contactus.html" class="nav-link">Contact</a></li>
+             </ul>
+             </div>
+             </nav>
+            </nav>
+          </header>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="content">
+            
+            <h2>E-commerce online shopping<br>
+            <span class="logo-body"> <img class="logo-img-body"src="logo.jpg" >
+            </span></h2>
+         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card-container">
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/81e0htAVmrL._UY741_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>AIRWILL Cotton </h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Kitchen Cooking Aprons<br> ₹170</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                        <img src="https://m.media-amazon.com/images/I/81ZvKvcS4LL._AC_UL320_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                        <div class="card-title"><h3>Miss Chase Women's </h3></div><hr>
+                        <div class="card-body">
+                            <div class="card-text">Multicolored Round Neck 3/4th Sleeves Tie-Up Tassel Detailing Side and Front Slit Maxi Top<br> ₹900</div>
+                           <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                        </div>
+                       </div>
+                       <div class="card" style="width:18rem;">
+                        <img src="https://m.media-amazon.com/images/I/71HIc0AVlEL._UX679_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                        <div class="card-title"><h3>CAMPUS SUTRA </h3></div><hr>
+                        <div class="card-body">
+                            <div class="card-text">his shirt is fabricated with top-grade and durable material<br> ₹1000</div>
+                           <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                        </div>
+                        </div>
+                        <div class="card" style="width:18rem;">
+                            <img src="https://m.media-amazon.com/images/I/61NPBdDBojL._UY741_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                            <div class="card-title"><h3>Istyle Can</h3></div><hr>
+                            <div class="card-body">
+                                <div class="card-text">Women's Polka Dot Sleeveless Shoulder Strap Fit and Flare Dress<br> ₹379</div>
+                               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                            </div>
+                       </div>
+                       </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-container">
+                    <div class="card" style="width:18rem;">
+                     <img src="https://www.damensch.com/_next/image?url=https%3A%2F%2Fadn.damensch.com%2Fwp-content%2Fuploads%2F2018%2F04%2FConstant-Hoodies-Crust-Olive.jpg&w=1920&q=75"width="100px" height="200px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Pullover Hoodies </h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Constant 500 Day Pullover Hoodies<br> ₹2999</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                        <img src="https://m.media-amazon.com/images/I/61cyPIdeY9L._UX679_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                        <div class="card-title"><h3>Dennis Lingo</h3></div><hr>
+                        <div class="card-body">
+                            <div class="card-text">Dennis Lingo Men's Slim fit Casual Shirt<br> ₹649</div>
+                           <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                        </div>
+                       </div>
+                       <div class="card" style="width:18rem;">
+                        <img src="https://m.media-amazon.com/images/I/91W0ooTjFpL._UX569_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                        <div class="card-title"><h3>Dennis Lingo </h3></div><hr>
+                        <div class="card-body">
+                            <div class="card-text">Dennis Lingo Men's Solid Slim Fit Casual Shirt<br> ₹749</div>
+                           <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                        </div>
+                        </div>
+                        <div class="card" style="width:18rem;">
+                            <img src="https://m.media-amazon.com/images/I/71b9aNmrf-L._AC_UL320_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                            <div class="card-title"><h3>Dennis Lingo</h3></div><hr>
+                            <div class="card-body">
+                                <div class="card-text">Men's Floral Slim Fit Cotton<br> ₹649</div>
+                               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                            </div>
+                       </div>
+                       </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="card-container">
+            <div class="card" style="width:18rem;">
+             <img src="https://m.media-amazon.com/images/I/81+r0BgLTqL._AC_UL320_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+              <div class="card-title"><h3>T2F</h3></div><hr>
+             <div class="card-body">
+                <div class="card-text">Boy's Loose Fit Track pants(Pack of 5)<br> ₹549</div>
+                <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+             </div>
+            </div>
+            <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/613g3oRiD7L._AC_UL320_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                <div class="card-title"><h3>Hopscotch</h3></div><hr>
+                <div class="card-body">
+                    <div class="card-text">Boys Cotton All-Over Print T-Shirt with Jacket & Pant Set in Green<br> ₹859</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+               </div>
+               <div class="card" style="width:18rem;">
+                <img src="https://m.media-amazon.com/images/I/81HgDZXZXTL._AC_UL320_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                <div class="card-title"><h3>Kuchipoo</h3></div><hr>
+                <div class="card-body">
+                    <div class="card-text">Full Sleeves Boys T-Shirts - Pack of 5, Multi-Colored (Tshrt-189)<br> ₹749</div>
+                   <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                </div>
+                </div>
+                <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51mF7diIunL._AC_UL320_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                    <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                    <div class="card-body">
+                        <div class="card-text">Colorblocked Boys Hoodies Sweatshirt<br> ₹599</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+               </div>
+               </div>
+              </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#carouselExampleIndicators"  role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true" ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+         </div>
+         <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#mycarousel" data-slide-to="1"></li>
+              <li data-target="#mycarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="md-container">
+                  <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/81e0htAVmrL._UY741_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>AIRWILL Cotton </h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Kitchen Cooking Aprons<br> ₹170</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                       <img src="https://m.media-amazon.com/images/I/81ZvKvcS4LL._AC_UL320_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                       <div class="card-title"><h3>Miss Chase Women's </h3></div><hr>
+                       <div class="card-body">
+                           <div class="card-text">Multicolored Round Neck 3/4th Sleeves Tie-Up Tassel Detailing Side and Front Slit Maxi Top<br> ₹900</div>
+                          <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                       </div>
+                      </div>   
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="md-container">
+                  <div class="card" style="width:18rem;">
+                    <img src="https://www.damensch.com/_next/image?url=https%3A%2F%2Fadn.damensch.com%2Fwp-content%2Fuploads%2F2018%2F04%2FConstant-Hoodies-Crust-Olive.jpg&w=1920&q=75"width="100px" height="200px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Pullover Hoodies </h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Constant 500 Day Pullover Hoodies<br> ₹2999</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                       <img src="https://m.media-amazon.com/images/I/61cyPIdeY9L._UX679_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                       <div class="card-title"><h3>Dennis Lingo</h3></div><hr>
+                       <div class="card-body">
+                           <div class="card-text">Dennis Lingo Men's Slim fit Casual Shirt<br> ₹649</div>
+                          <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                       </div>
+                      </div>  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="md-container">
+                  <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/81+r0BgLTqL._AC_UL320_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>T2F</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Boy's Loose Fit Track pants(Pack of 5)<br> ₹549</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                       <img src="https://m.media-amazon.com/images/I/613g3oRiD7L._AC_UL320_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                       <div class="card-title"><h3>Hopscotch</h3></div><hr>
+                       <div class="card-body">
+                           <div class="card-text">Boys Cotton All-Over Print T-Shirt with Jacket & Pant Set in Green<br> ₹859</div>
+                          <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                       </div>
+                      </div> 
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div id="smcarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#smcarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#smcarousel" data-slide-to="1"></li>
+              <li data-target="#smcarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="sm-container">
+                  <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/81e0htAVmrL._UY741_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>AIRWILL Cotton </h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Kitchen Cooking Aprons<br> ₹170</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="sm-container">
+                  <div class="card" style="width:18rem;">
+                    <img src="https://www.damensch.com/_next/image?url=https%3A%2F%2Fadn.damensch.com%2Fwp-content%2Fuploads%2F2018%2F04%2FConstant-Hoodies-Crust-Olive.jpg&w=1920&q=75"width="100px" height="200px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Pullover Hoodies </h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Constant 500 Day Pullover Hoodies<br> ₹2999</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="sm-container">
+                  <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/81+r0BgLTqL._AC_UL320_.jpg"width="100px" height="200px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>T2F</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Boy's Loose Fit Track pants(Pack of 5)<br> ₹549</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#smcarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#smcarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        
+        <footer>
+          <div class="container">
+        <div class="item"><a href="womensall.html" class="item-link">Women</a><br> <a href="womensdress.html" class="item-link">Dresses</a><br><a href="womenpants.html"class="item-link">Pants</a><br><a href="womensskirts.html"class="item-link">skirts</a></div>
+        <div class="item"><a href="mensallproducts.html"class="item-link">Men</a><br><a href="menshirts.html"class="item-link">shirts</a><br><a href="menpants.html"class="item-link">Pants</a><br><a href="menshoodies.html"class="item-link">Hoodies</a></div>
+        <div class="item"><a href="kidscloths.html"class="item-link">Kids</a></div>
+        <div class="item"><a href="#"class="item-link">Links</a><br><a href="index.html"class="item-link">Home</a><br><a href="login.html"class="item-link">login</a><br><a href="contactus.html"class="item-link">Contact</a></div>
+        </div>
+        <hr>
+    <p><b>Copyright&copy; Reserved.</b></p>
+    
+</footer> 
+        
+    </body>
+</html>

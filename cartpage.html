@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECOMMERCE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">    
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2018/08/25/01/15/scam-3629263_960_720.png">
+   <link rel="stylesheet" href="style.css">
+   <script src="code.js"></script>
+  <style>
+    .summary-card{
+        background-color: white;
+        height: auto;
+        width: 500px;
+        text-align: center;
+        background-color:#7f7373;
+    }
+    
+    .summary-container{
+        justify-content: center;
+        margin-left: 500px;
+        background-color:#7f7373;
+        
+        }
+        .cost{
+            margin-left: 50px;
+           border: #7f7373;
+           background-color:#7f7373;
+        }
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+   }
+   .card{
+    height: auto;
+    margin: 2px;
+    
+   }
+   h2{
+    text-align: center;
+    border: solid;
+    
+    width:100%;
+   }
+   .row{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+   }
+   .checkout-btn{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: black;
+    border: solid;
+    font-size: 25px;
+    border-radius: 5mm;
+   }
+   @media only screen and (max-width:1200px){
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+   }
+   .summary-container{
+        justify-content: center;
+        margin-left:20px;
+        background-color:#7f7373;
+        
+        }
+   }
+   @media only screen and (max-width:600px){
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 0px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto  ;
+   }
+   .summary-card{
+    background-color: white;
+        height: auto;
+        width: 300px;
+        text-align: center;
+        background-color:#7f7373;
+   }
+   .summary-container{
+        justify-content: center;
+        margin-left:0;
+        background-color:#7f7373;
+        
+        }
+   }
+   </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <input type="checkbox" id="click">
+          <label for="click"class="menu-btn">
+              <i class="fa-solid fa-bars"></i>
+          </label>
+          <span class="logo"> <img class="logo-img"src="logo.jpg" >
+           </span>
+           <span class="search">
+              <input type="text" placeholder="product name, category name, etc">
+              <button type="button" class="btn btn-success"><i class="fa-solid fa-magnifying-glass"></i></button>
+           </span>
+           <a href="login.html"><button type="button" class="log btn-primary" href="login.html">login</button></a>
+           <a href="cartpage.html"><span class="cart active"><i class="fa-solid fa-cart-shopping"></i></span></a> 
+          <div class="nav-container">
+           <ul class="nav nav-pills">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="allproducts.html" class="nav-link">All products</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Women<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="womensall.html">All products</a></li>
+                  <li><a class="dropdown-item" href="womensdress.html">Dresses</a></li>
+                  <li><a class="dropdown-item" href="womenpants.html">Pants</a></li>
+                  <li><a class="dropdown-item" href="womensskirts.html">skirts</a></li>
+              </ul>
+              </li>
+              <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Men<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item " href="mensallproducts.html">All products</a></li>
+                      <li><a class="dropdown-item " href="menshirts.html">shirts</a></li>
+                      <li><a class="dropdown-item " href="menpants.html">Pants</a></li>
+                      <li><a class="dropdown-item " href="menshoodies.html">hoodies</a></li>
+                  </ul>
+              </li>
+                  <li class="nav-item"><a href="kidscloths.html" class="nav-link">Kids</a></li>
+                  <li class="nav-item"><a href="contactus.html" class="nav-link">Contact</a></li>
+           </ul>
+           </div>
+           </nav>
+          </nav>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="content">
+            <h2>E-commerce online shopping<br>Item in cart</h2>
+            <div class="cart-container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="https://m.media-amazon.com/images/I/412on5q1qpL._AC_UL320_.jpg"width="100px" height="100px"> 
+                </div>
+                <div class="col-sm-4">
+                    <p>Generic</p><p><p><input type="button" class="cost"value="₹499"></p>
+                    <button type="button" class="delet btn-primary"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="decrement"><button type="button" class="decrement-btn btn-primary" onclick=""><i class="fa-solid fa-square-minus"></i></button></span>
+                        <span class="count"><input type="text" id="number" value="1"></span>
+                        <span class="increment"><button type="button" class="increment-btn btn-primary"onclick="increment()"><i class="fa-regular fa-square-plus"></i></button></span>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="https://m.media-amazon.com/images/I/412on5q1qpL._AC_UL320_.jpg"width="100px" height="100px"> 
+                </div>
+                <div class="col-sm-4">
+                    <p>Generic</p><p><p><input type="button" class="cost"value="₹499"></p>
+                    <button type="button" class="delet btn-primary"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="decrement"><button type="button" class="decrement-btn btn-primary"><i class="fa-solid fa-square-minus"></i></button></span>
+                        <span class="count"><input type="text" value="1" class="count-number"></span>
+                        <span class="increment"><button type="button" class="increment-btn btn-primary"><i class="fa-regular fa-square-plus"></i></button></span>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="https://m.media-amazon.com/images/I/412on5q1qpL._AC_UL320_.jpg"width="100px" height="100px"> 
+                </div>
+                <div class="col-sm-4">
+                    <p>Generic</p><p><input type="button" class="cost"value="₹499"></p>
+                    <button type="button" class="delet btn-primary"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="decrement"><button type="button" class="decrement-btn btn-primary"><i class="fa-solid fa-square-minus"></i></button></span>
+                        <span class="count"><input type="text" value="1" class="count-number"></span>
+                        <span class="increment"><button type="button" class="increment-btn btn-primary"><i class="fa-regular fa-square-plus"></i></button></span>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="https://m.media-amazon.com/images/I/412on5q1qpL._AC_UL320_.jpg"width="100px" height="100px"> 
+                </div>
+                <div class="col-sm-4">
+                    <p>Generic</p><p><input type="button" class="cost"value="₹499"></p>
+                    <button type="button" class="delet btn-primary"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="decrement"><button type="button" class="decrement-btn btn-primary"><i class="fa-solid fa-square-minus"></i></button></span>
+                        <span class="count"><input type="text" value="1" class="count-number"></span>
+                        <span class="increment"><button type="button" class="increment-btn btn-primary"><i class="fa-regular fa-square-plus"></i></button></span>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="https://m.media-amazon.com/images/I/412on5q1qpL._AC_UL320_.jpg"width="100px" height="100px"> 
+                </div>
+                <div class="col-sm-4">
+                    <p>Generic</p><p><input type="button" class="cost"value="₹499"></p>
+                    <button type="button" class="delet btn-primary"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="decrement"><button type="button" class="decrement-btn btn-primary"><i class="fa-solid fa-square-minus"></i></button></span>
+                        <span class="count"><input type="text" value="1" class="count-number"></span>
+                        <span class="increment"><button type="button" class="increment-btn btn-primary"><i class="fa-regular fa-square-plus"></i></button></span>
+                    </div>
+            </div>
+       </div>
+       <div class="summary-container">
+        <div class="summary-card" style="width">
+           <div class="card-title"><h3>Summary</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text"> cost<input type="button"class="cost" value="count"></div><br>
+               <div class="shipping-fee">shipping <input type="button"class="cost" value="₹100"></div>
+               <hr>
+               <div class="total">Total<input type="button" class="cost"value="count"></div>
+               <br>
+               <div class="checkou"><button type="button" class="checkout-btn btn-success"value="CHECKOUT"onclick="checkout()">checkout</button></div>
+            </div>
+         </div>
+       </div>
+       </div>
+       <br>
+       <hr>
+       <footer>
+        <div class="container">
+      <div class="item"><a href="womensall.html" class="item-link">Women</a><br> <a href="womensdress.html" class="item-link">Dresses</a><br><a href="womenpants.html"class="item-link">Pants</a><br><a href="womensskirts.html"class="item-link">skirts</a></div>
+      <div class="item"><a href="mensallproducts.html"class="item-link">Men</a><br><a href="menshirts.html"class="item-link">shirts</a><br><a href="menpants.html"class="item-link">Pants</a><br><a href="menshoodies.html"class="item-link">Hoodies</a></div>
+      <div class="item"><a href="kidscloths.html"class="item-link">Kids</a></div>
+      <div class="item"><a href="#"class="item-link">Links</a><br><a href="index.html"class="item-link">Home</a><br><a href="login.html"class="item-link">login</a><br><a href="contactus.html"class="item-link">Contact</a></div>
+      </div>
+      <hr>
+  <p><b>Copyright&copy; Reserved.</b></p>
+</footer>
+</body>
+</html>

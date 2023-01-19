@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECOMMERCE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">    
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2018/08/25/01/15/scam-3629263_960_720.png">
+   <link rel="stylesheet" href="style.css">
+   <style>
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+   }
+   .card{
+    height: auto;
+    margin: 2px;
+    
+   }
+   @media only screen and (max-width:1200px){
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto auto ;
+   }
+   }
+   @media only screen and (max-width:600px){
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto  ;
+   }
+   }
+   </style>
+</head>
+<body>
+   <header>
+      <nav>
+        <input type="checkbox" id="click">
+        <label for="click"class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <span class="logo"> <img class="logo-img"src="logo.jpg" >
+         </span>
+         <span class="search">
+            <input type="text" placeholder="product name, category name, etc">
+            <button type="button" class="btn btn-success"><i class="fa-solid fa-magnifying-glass"></i></button>
+         </span>
+         <a href="login.html"><button type="button" class="log btn-primary" href="login.html">login</button></a>
+         <a href="cartpage.html"><span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></a> 
+        <div class="nav-container">
+         <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="allproducts.html" class="nav-link">All products</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Women<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="womensall.html">All products</a></li>
+                <li><a class="dropdown-item" href="womensdress.html">Dresses</a></li>
+                <li><a class="dropdown-item active" href="womenpants.html">Pants</a></li>
+                <li><a class="dropdown-item" href="womensskirts.html">skirts</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Men<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item " href="mensallproducts.html">All products</a></li>
+                    <li><a class="dropdown-item " href="menshirts.html">shirts</a></li>
+                    <li><a class="dropdown-item " href="menpants.html">Pants</a></li>
+                    <li><a class="dropdown-item " href="menshoodies.html">hoodies</a></li>
+                </ul>
+            </li>
+                <li class="nav-item"><a href="kidscloths.html" class="nav-link">Kids</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact</a></li>
+         </ul>
+         </div>
+         </nav>
+        </nav>
+      </header>   
+       <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="content">
+            <h2>E-commerce online shopping<br>
+            <span class="logo-body"> <img class="logo-img-body"src="logo.jpg" >
+            </span></h2>
+            <div class="card-container">
+         <!---women pants-->
+         <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/51sC7T0w0WL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>GO COLORS</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women Mid Rise Kurti Pant<br>₹1,049</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/41yPCfEU8-L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>GO COLORS</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women Mid Rise Cotton Pants<br>₹849</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/61r+ZK+jPtL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>ADDYVERO</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women's Party Dress Pants Stretchy Work Slacks Business Casual Office<br>₹379</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/51jXgsSM6SL._UY606_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>KOTTY </h3></div><hr>
+            <div class="card-body">
+               <div class="card-text"> Womens Solid Polyester Blend Teal Green Trousers<br>₹695</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/61PqYZRaVJL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>DHRUVI TRENDZ</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women's Premium Cotton Trouser|Pant for Kurti|Formal Pant<br>₹299</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/51tYPrFRl1L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>JB-FASHION</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">J B Fashion
+                Trousers Pants for Women || Trousers Pant for Women || Western Trousers<br>₹399</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/612iYaPGfqL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women's Slim Fit Poly Cotton Track Pants<br>₹549</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/61gyWDEACpL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>Amazon Brand - Myx</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women Pants<br>₹309</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/61qgPTpS7GL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>JOCKEY</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Womens Basic Lounge Pants<br>₹830</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/61dmibNf0TL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>Shasmi</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Black Women's Yoga Dress Pants Stretchy Work Slacks Business<br>₹469</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/819+sonlfvL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>AKA CHIC</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women's Wide Leg Jeans<br>₹495</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/61oJ5XoWrjL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>TRASA</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Active Yoga Pants for Womens Gym High Waist with 3 Pockets, Tummy<br>₹599</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/51eZ4PuuaSL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>Lyra</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women's Pants<br>₹399</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/71HmAqa9wKL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>Amazon Brand - Symbol</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women Work Utility Pants<br>₹709</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/61Px0nqtw2L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>Van Heusen Athleisure</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Stretch Lounge Pants With Pockets<br>₹810</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/41uQZtMItrL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>Greciilooks</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women's Tie-Dye Joggers Strechable Pants Treggings|Slim Fit Casual<br>₹359</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/81GwOwgGc9L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>Van Heusen</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women Capri<br>₹689</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/61OcO24+kxL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>PAINT</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Solid Rose Gold elsticated high Waist Cigarette Trouser<br>₹453</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/71JpPBOVYeL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>Lymio</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women Trousers || Girl's Trousers (P-15)<br>₹429</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           <div class="card" style="width:18rem;">
+            <img src="https://m.media-amazon.com/images/I/51cJM-VVBSL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+             <div class="card-title"><h3>AKA CHIC</h3></div><hr>
+            <div class="card-body">
+               <div class="card-text">Women's Jeggings Jeans<br>₹799</div>
+               <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+            </div>
+           </div>
+           </div>
+           </div>
+           <footer>
+            <div class="container">
+          <div class="item"><a href="womensall.html" class="item-link">Women</a><br> <a href="womensdress.html" class="item-link">Dresses</a><br><a href="womenpants.html"class="item-link">Pants</a><br><a href="womensskirts.html"class="item-link">skirts</a></div>
+          <div class="item"><a href="mensallproducts.html"class="item-link">Men</a><br><a href="menshirts.html"class="item-link">shirts</a><br><a href="menpants.html"class="item-link">Pants</a><br><a href="menshoodies.html"class="item-link">Hoodies</a></div>
+          <div class="item"><a href="kidscloths.html"class="item-link">Kids</a></div>
+          <div class="item"><a href="#"class="item-link">Links</a><br><a href="index.html"class="item-link">Home</a><br><a href="login.html"class="item-link">login</a><br><a href="contactus.html"class="item-link">Contact</a></div>
+          </div>
+          <hr>
+      <p><b>Copyright&copy; Reserved.</b></p>
+    </footer>          
+</body>
+</html>

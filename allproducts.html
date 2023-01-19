@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ECOMMERCE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">    
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2018/08/25/01/15/scam-3629263_960_720.png">
+   <link rel="stylesheet" href="style.css">
+   <style>
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+   }
+   .card{
+    height: auto;
+    margin: 2px;
+    
+   }
+   @media only screen and (max-width:1200px){
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto auto ;
+   }
+   }
+   @media only screen and (max-width:600px){
+    .card-container{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     margin-left: 10px; 
+     margin-right: 10px;
+    display:grid;
+    grid-template-columns: auto  ;
+   }
+   }
+   </style>
+</head>
+<body>
+   <header>
+      <nav>
+        <input type="checkbox" id="click">
+        <label for="click"class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <span class="logo"> <img class="logo-img"src="logo.jpg" >
+         </span>
+         <span class="search">
+            <input type="text" placeholder="product name, category name, etc">
+            <button type="button" class="btn btn-success"><i class="fa-solid fa-magnifying-glass"></i></button>
+         </span>
+         <a href="login.html"><button type="button" class="log btn-primary" href="login.html">login</button></a>
+         <a href="cartpage.html"><span class="cart"><i class="fa-solid fa-cart-shopping"></i></span></a> 
+        <div class="nav-container">
+         <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="allproducts.html" class="nav-link active">All products</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Women<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="womensall.html">All products</a></li>
+                <li><a class="dropdown-item" href="womensdress.html">Dresses</a></li>
+                <li><a class="dropdown-item" href="womenpants.html">Pants</a></li>
+                <li><a class="dropdown-item" href="womensskirts.html">skirts</a></li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown"><a href="#" class="nav-item dropdown-item" data-toggle="dropdown">Men<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="mensallproducts.html">All products</a></li>
+                    <li><a class="dropdown-item" href="menshirts.html">shirts</a></li>
+                    <li><a class="dropdown-item" href="menpants.html">Pants</a></li>
+                    <li><a class="dropdown-item" href="menshoodies.html">hoodies</a></li>
+                </ul>
+            </li>
+                <li class="nav-item"><a href="kidscloths.html" class="nav-link">Kids</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact</a></li>
+         </ul>
+         </div>
+         </nav>
+        </nav>
+      </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="content">
+            <h2>E-commerce online shopping<br>
+            <span class="logo-body"> <img class="logo-img-body"src="logo.jpg" >
+            </span></h2>
+            <div class="card-container">
+                 <!--women dresses--->
+                <div class="card" style="width:18rem;">
+                 <img src="https://m.media-amazon.com/images/I/71q+7G89EgL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                  <div class="card-title"><h3>Miss Chase</h3></div><hr>
+                 <div class="card-body">
+                    <div class="card-text">Women's Georgette Fit and Flare Maxi Dress <br>₹1,200</div>
+                    <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                 </div>
+                </div>
+                <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/71pekGltKZL._UX679_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Aditi Wasan</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Aditi Wasan Women Kaftan<br>₹1,058</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61gUUqzWgRS._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>ishin</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">ishin
+                        Women's Cotton Off White Zari Embellished A-Line Dress<br>₹999</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/815nD5rD+uL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Miss Chase</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Comfortable Round Neck Sleeveless Striped<br>₹699</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61qHZ25pJ-L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>RARE</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Dress<br>₹399</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/71rMRpKv9AL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Greciilooks</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Western Dresses for Women | A-Line Knee-Length Dress | Midi Western Dress for Women|<br>₹399</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/71eDiRyEF-S._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Harpa</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Polyester A-Line Midi Dress<br>₹621</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61akA1Lfz5L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>PURVAJA</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women’s Empire Maxi Dress(Lucy-412-416-418-419)<br>₹444</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/615mG1+AbOL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Lymio</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Polyester A-Line Long Dress<br>₹449</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61zGZeQ0VEL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Rhysley </h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text"> Black Fit & Pleated Flare Short Cap Sleeves V Neck Mini Dress for Women<br>₹1,062</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51Mf7N9KjHL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Selvia</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women Dress<br>₹359</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/81mm0IccS3L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>OOMPH!</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Crepe Pleated Knee-Long Dress (Elizabeth} <br>₹429</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51xuH0GKwSL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>GG-STYLE</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text"> Womens Western Kurti and Ladies Pearl Style Dress Knee Length Frock for Women<br>₹690</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61SNhZNgzFL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Sheetal Associates</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Elegant Glitter Long Sleeve V Neck Bodycon Mini Cocktail Party<br>₹439</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51TPe3Z3XjL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>TOPLOT</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Black Dress for Women/Desses for Women Dress for Women/Girls<br>₹659</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/711RcdjMMPL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Miss Olive</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Synthetic Shift Dress<br>₹349</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/71k4VyhjhsL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>OOMPH!</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Crepe A-Line Knee Length Dress<br>₹429</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61wl0DBLw1L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Leriya Fashion</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Summer Slub Rayon Wrap Maxi Dress Casual Dote Printed High<br>₹449</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/71tRHxU7LiS._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Miss Chase</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Polyester-P Casual Dress <br>₹936</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61sbFqt193S._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>DHRUVI TRENDZ</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women Rayon Casual Wear Western Maxi Dress Gown<br>₹395</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <!---women pants-->
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51sC7T0w0WL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>GO COLORS</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women Mid Rise Kurti Pant<br>₹1,049</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/41yPCfEU8-L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>GO COLORS</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women Mid Rise Cotton Pants<br>₹849</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61r+ZK+jPtL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>ADDYVERO</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Party Dress Pants Stretchy Work Slacks Business Casual Office<br>₹379</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51jXgsSM6SL._UY606_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>KOTTY </h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text"> Womens Solid Polyester Blend Teal Green Trousers<br>₹695</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61PqYZRaVJL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>DHRUVI TRENDZ</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Premium Cotton Trouser|Pant for Kurti|Formal Pant<br>₹299</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51tYPrFRl1L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>JB-FASHION</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">J B Fashion
+                        Trousers Pants for Women || Trousers Pant for Women || Western Trousers<br>₹399</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/612iYaPGfqL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Slim Fit Poly Cotton Track Pants<br>₹549</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61gyWDEACpL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Amazon Brand - Myx</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women Pants<br>₹309</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61qgPTpS7GL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>JOCKEY</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Womens Basic Lounge Pants<br>₹830</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61dmibNf0TL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Shasmi</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Black Women's Yoga Dress Pants Stretchy Work Slacks Business<br>₹469</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/819+sonlfvL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>AKA CHIC</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Wide Leg Jeans<br>₹495</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61oJ5XoWrjL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>TRASA</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Active Yoga Pants for Womens Gym High Waist with 3 Pockets, Tummy<br>₹599</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51eZ4PuuaSL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Lyra</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Pants<br>₹399</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/71HmAqa9wKL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Amazon Brand - Symbol</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women Work Utility Pants<br>₹709</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61Px0nqtw2L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Van Heusen Athleisure</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Stretch Lounge Pants With Pockets<br>₹810</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/41uQZtMItrL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Greciilooks</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Tie-Dye Joggers Strechable Pants Treggings|Slim Fit Casual<br>₹359</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/81GwOwgGc9L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Van Heusen</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women Capri<br>₹689</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61OcO24+kxL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>PAINT</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Solid Rose Gold elsticated high Waist Cigarette Trouser<br>₹453</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/71JpPBOVYeL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Lymio</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women Trousers || Girl's Trousers (P-15)<br>₹429</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51cJM-VVBSL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>AKA CHIC</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Jeggings Jeans<br>₹799</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <!---women skirts-->
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61Qv6q9GJoL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Stars and You</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Flared Skater Skirt for Girls<br>₹335</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61kifUtCsCL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>GENERIC</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Lovclick Fashion Women Stretch Waist Flared Mini Skater Short Skirt<br>₹399</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div> <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51BQsCxKqQL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Splash</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Cotton Rich Regular Skirt Slip for Women (Pack of 3)<br>₹1,100</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61pqWkgTJhL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Generic</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Lovclick Fashion Women High Waist Versatile Straight Knee Length Pencil<br>₹399</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div> <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/91z4rs1aP7S._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>NUEVOSDAMAS</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women Western Floral Printed Skirt | A- Line Pleated Skirt | Casual <br>₹499</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/71OHhet1o7L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>JANAK</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Faux Suede Mini Skirt 611<br>₹399</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div> <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51jwhblfgOL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>FRAULEIN</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Girl's/Women's Classic Stretchy All Time Trendy Skater Knee Length<br>₹499</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61ZLuIHY7WL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>ZWERLON</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Midi-skirt<br>₹279</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div> <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61ry-ewvLyL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>OTABU</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Fealed skirt<br>₹299</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/91-zut6ZqWL._UY606_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Studio Shringaar</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Knee Length Skirt<br>₹499</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div> <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61eHqwgzCfL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>ADDYVERO</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Maxi Skirt<br>₹399</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/71qDGZti1tL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Polls apart</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Cotton Pencil Skirt (Pack of 1) (Black, Free Size)<br>₹599</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div> <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61DnuzCEHzL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Generic</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Maxi Skirts With Inner Short (SKblack new_Blue_Free Size)<br>₹599</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61SXEy9M6gL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>POP-WINGS</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women Geometric Print Pencil Skirt<br>₹299</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div> <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61+6jtDnnqL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Generic</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Printed Skirt All<br>₹299</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/71hVdbWkMZL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Aahwan</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's & Girls' Solid High Waist Flared Skater Short Mini Skirt<br>₹399</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div> <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/51cbEVfpIcL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Janak 'n' Masaaya</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Janak Women's Cotton Skirt Black<br>₹545</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/81OrAUmixCL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Studio Shringaar</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Women's Polyester Chanderi Silk Skirt Lehenga<br>₹949</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/81NOreF-63L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>EIRSON ENTERPRISES</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">EIRSON Cotton Women's Long Wrap Around Skirt Jaipuri Printed<br>₹549</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <div class="card" style="width:18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61wb2Jx-p2L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                     <div class="card-title"><h3>Generic</h3></div><hr>
+                    <div class="card-body">
+                       <div class="card-text">Corduroy Skirt<br>₹649</div>
+                       <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                    </div>
+                   </div>
+                   <!--men shirts-->
+                   <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/613Zuk9t8TL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Park Avenue</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Medium grey shirt<br>₹1,175</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61WgN5RevNL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Park Avenue</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Black Shirts<br>₹1,349</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61oJ672DMtL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Park Avenue</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Medium Red Shirt<br>₹953</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/7167k27jzqL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Twist99</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Multicolor Checkered Regular Fit Full Sleeve Cotton Shirts Plus Sizes <br>₹995</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/619Y8wUTDpL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Bigbanana</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Plus Size Men's Henley T-Shirt<br>₹660</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/41omu1ro-jL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Instafab Plus</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Regular Fit Shirt (AZZ20SHRT_PNCHK58_M_PLN_LBU)<br>₹799</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/41nY9ObnviL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>GLORYBOYZ</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Cotton Regular Fit Short Sleeve Big Checks Chambray Shirt<br>₹679</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71fN2rEcvzL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Arrow</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men Shirt<br>₹2,229</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/711aP6YP8UL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>BOTTOM BRICK</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Plus Size Solid Shirt<br>₹999</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/91AHWWybvDL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>SHASAK</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Plus Size Printed Shirts for Men 3XL<br>₹850</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/81EqA--jXFL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Amazon Brand Inkast Denim Co.</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Slim Fit Casual Shirt<br>₹950</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71DE1P+IuCL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Twist99</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Plus Size Shirts Big Tall Short Sleeve Cotton Shirt for Men 2XL<br>₹999</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71uT1xT88KL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>pluss</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men Brown Printed Shirt<br>₹999</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61LfMT1ZaPL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Bigbanana</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Plus Size Men's Henley T-Shirt<br>₹446</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61Qmdvx0zjL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Kalt</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men Full Sleeves Mandarin Collar Cotton Blend T-Shirt<br>₹649</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/81Fxcp2DIML._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Twist99</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Mens Cotton Linen Half Sleeve Plus Size Short Kurta><br>₹1,349</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61PPlDRKYcL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Majestic Man</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Slim Fit Cotton Casual Check Shirt for Men<br>₹449</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71TkWvZE8DL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Kuons Avenue<h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Slim Fit Shirt<br>₹999</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71sZ2geqnFL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Diverse</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men Cotton Casual Shirt<br>₹489</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61dwxZ1GhpL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>VAISHVIK</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Mens Plus Size T-Shirt<br>₹446</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <!--men pants-->
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61fVMNqy3GL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Amazon Brand - Symbol</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Slim Fit Formal Trousers<br>₹749</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71v53vKMXUL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>The Pant Project</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Slim Fit Polyester Blend Formal Pants<br>₹1,990</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61eycNXPDoL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Hence</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"><br>₹849</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71rQD1ndKpL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Amazon Brand - Symbol</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Straight Casual Trousers<br>₹849</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/717-WaIUi9L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Amazon Brand - Symbol</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Slim Fit Formal Trousers<br>₹699</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61R11o1DC+S._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>ENDEAVOUR WEAR</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Regular Fit Trackpants<br>₹649</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/51zAu9ECmAL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>MALENO</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Elegant Slim Fit Men Solid Trouser<br>₹419</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61asRSilHlL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Amazon Brand - Symbol</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men Casual Trousers<br>₹739</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61qoz5T51VL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Jockey</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Cotton Track Pants<br>₹689</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/81eAI0MCHPL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Amazon Brand - Symbol</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Regular Track Pants<br>₹416</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/51RO+THKEiL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>RUIT</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men Jeans Pant Stretch Slim Fit<br>₹419</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61KN6slBwgL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>GWAens</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Mens Trackpant(Pack of 3)<br>₹946</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/81RuOi+8grL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Neostreak</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Slim Fit Jeans<br>₹519</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/8177eP3pKmL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Amazon Brand - Symbol</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men Casual Trousers<br>₹869</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61ELAf0ZLcL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>McHenry</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Solid Formal Regular Fit Wrinkle Free PolyViscose Trousers<br>₹999</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/710yTPBWuzL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Sponsored </h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">The Veshti Company Men's Premium Low crotch Loose Boho Yoga Harem Pants<br>₹1,779</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/41uAn9e8bZL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>URBARO </h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">  Men's Cotton Slim Fit Casual Trouser<br>₹689</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71IQNRUFQzL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Amazon Brand - Symbol</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Men's Slim Casual Trousers<br>₹519</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/51naFZ-N7zL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Peter England</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Men's Slim Casual Pants<br>₹819</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71AvgZDDi5L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>SUMPTUOUS</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Men Business Casual Pants<br>₹756</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <!--men hoodie-->
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71FD2l9DpEL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Men's Fleece Hooded Hoodie<br>₹6499</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/81LpjmHkTAL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Jockey</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Mens Hooded Slub Sweatshirt<br>₹1,669</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/51leD9rh8dL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Cotton Hooded Neck Hoodies<br>₹679</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/811c067lJWL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">  Men's Cotton Hooded Neck Sweatshirt<br>₹599</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71FD2l9DpEL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Men's Fleece Hooded Hoodie<br>₹519</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/812fMBsQP7L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3> Amazon Brand - Symbol</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Cotton Blend Hooded Sweatshirt (AW18MNSSW04_Ecru<br>₹779</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61bpdFL9G6L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>BLIVE</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Men's Full Sleeve Hooded T-Shirt | Printed Hoodie T-Shirt<br>₹699</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/510SGdMK0BL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>More & More</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">  Unisex-Adult Cotton Hooded Neck Don’t Quit Printed Hoodie<br>₹786</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/51Hz7KZL2TL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Trillion</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men's Printed Hooded Sweatshirt<br>₹619</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/81kSdS3nITL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Amazon Brand - Symbol</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Men Hooded Sweatshirt<br>₹609</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/81pbCd9XNKS._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Diverse</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">  Men's Cotton Blend Hooded Full Sleeve Sweatshirt<br>₹719</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61ZNc27pJ6L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>TOPLOT</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Men's Hoodie||Hoodie for Men||Men's Sweatshirt||Plain Hoodie||Men's<br>₹556</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71Xf63YBhcL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Campus Sutra</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Men’s Sweatshirt with Hoodie Regular Fit for Casual Wear | Full Sleeve <br>₹719</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61NRThJtaZL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Red Tape</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Men Hoodie Sweatshirt<br>₹856</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61EYIj+k+HL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>LEWEL</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">  Men's Hooded Buttoned Down Checked T-Shirt (Olive Green)<br>₹479</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61+8bVgNxjL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>ADRO</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Men's Solid Cotton Zipper Hoodies<br>₹716</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/51yrBJHE+WL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Moyzikh</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">  Men's Printed Cotton Hoodies<br>₹499</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61JWiBBo9cL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Veirdo</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">  Fleece Material Regular Fit Full Sleeves Hooded Neck Navy & Maroon<br>₹506</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/613yTmjH69L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Campus Sutra</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Men’s Cotton Hoodie Relaxed Fit for Casual Wear | Full Sleeve | Latest<br>₹619</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71BirWti0xL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Amazing Product</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Amazon Brand - Inkast Denim Co. Men Sweatshirt<br>₹899</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                  </div>
+                  <!--kids cloths-->
+                  <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/51DmmaT-PtL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>MAYA BOOKKEY</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Baby Boys Cotton Casual Sleeveless Top and Shorts Combo Set I Printed<br>₹449</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61g0JcaQD8L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>BALUDA</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">ENTERPRISE SEMI LYCRA CLOTHS FOR BABY BOYS<br>₹599</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/514kLkIe6sL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Bold N Elegant - Be Bold Inside & Elegant Outside</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Baby Boy's Cotton Tshirt Pant Set<br>₹549</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/51F-lv2DsLS._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Wish Cars</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Cotton Clothing Sets For Baby Boys-(bt76nw) <br>₹549</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/51Oa5Oxg+-L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Bold N Elegant</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Full Sleeve Elephant Print Tshirt Sweatshirt Joggers Pyjama Pant<br>₹619</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/81EcC5jdnOS._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>AJ DEZINES</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Kids Shirt, Shorts Clothing Set For Boys For Boys<br>₹1,799</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/A1zuCP-7NNL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>AJ DEZINES</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Boys Checkered White Waistcoat for Kids<br>₹889</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/81sTSCKbKGL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>ARIEL</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Cotton Fleece Clothing Sets for Boys & girls - Unisex Winter Clothing sets<br>₹629</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/512ibVDAAVL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>TASLAR</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">TASLAR Soft Flannel Unisex Baby Infant Kids Costume Soft Flannel<br>₹1,449</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/81+r0BgLTqL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>T2F</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Boy's Loose Fit Track pants(Pack of 5)<br>₹899</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/51-ISImNTEL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Hopscotch</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Boys Gray Graphic Print Top and Pant Set<br>₹719</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/31zTx4VIh8L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Googo Gaaga</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Googogaaga Boy's Cotton Full Sleeves Army Style Sweatshirt with Pant<br>₹899</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/71ylILt5mBL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>on Organik</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">BonOrganik Official Boys Regular Fit Sweatshirt<br>₹719</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61lrmRHOgoL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Generic</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Kids Baby Winter Knit Hat Scarf Set Toddler Girls Boys Woolen Soft Wool<br>₹399</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/41Fl-3AKizL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>The Mom Store</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Boys Cotton -shirt and jogger Set for Baby/Kids | 100% Cotton | Summer<br>₹999</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/6148WnLKWCL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Boy's Regular Fit Cotton Blend Track Pant<br>₹399</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/41MGvSrk0LL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>GET MORE</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Baby Boys and Baby Girls Dungaree Set with Shirt and Bow Tie<br>₹599</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/610xYp94fYL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Generic</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Deilusion Merry Christmas Santa Claus White Graphic Printed Cotton Round<br>₹281</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                  </div>
+                  <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/61JSQyEjH5L._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Alan Jones Clothing</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text">Boys Poly Cotton Hooded Neck Hooded Sweatshirt<br>₹549</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                    </div>
+                    <div class="card" style="width:18rem;">
+                     <img src="https://m.media-amazon.com/images/I/412on5q1qpL._AC_UL320_.jpg"width="100px" height="300px" class="card-img-top" alit="profile">
+                      <div class="card-title"><h3>Generic</h3></div><hr>
+                     <div class="card-body">
+                        <div class="card-text"> Stylish Floral Baby Girls Frocks/Dress Christmas Red for 4-5 Year M-3<br>₹499</div>
+                        <button type="button" class="cartbtn btn-primary"href="#"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+                     </div>
+                  </div>
+                   </div> 
+            </div>
+            <footer>
+               <div class="container">
+             <div class="item"><a href="womensall.html" class="item-link">Women</a><br> <a href="womensdress.html" class="item-link">Dresses</a><br><a href="womenpants.html"class="item-link">Pants</a><br><a href="womensskirts.html"class="item-link">skirts</a></div>
+             <div class="item"><a href="mensallproducts.html"class="item-link">Men</a><br><a href="menshirts.html"class="item-link">shirts</a><br><a href="menpants.html"class="item-link">Pants</a><br><a href="menshoodies.html"class="item-link">Hoodies</a></div>
+             <div class="item"><a href="kidscloths.html"class="item-link">Kids</a></div>
+             <div class="item"><a href="#"class="item-link">Links</a><br><a href="index.html"class="item-link">Home</a><br><a href="login.html"class="item-link">login</a><br><a href="contactus.html"class="item-link">Contact</a></div>
+             </div>
+             <hr>
+         <p><b>Copyright&copy; Reserved.</b></p>
+     </footer>  
+</body>
